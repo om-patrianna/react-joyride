@@ -1,7 +1,7 @@
 .tmp
 _book/
 coverage
-dist
+!dist
 node_modules
 /test-results/
 /playwright-report/
