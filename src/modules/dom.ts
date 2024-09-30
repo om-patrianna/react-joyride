@@ -214,7 +214,7 @@ export function getElementPosition(
       top += parentTop;
     }
 
-    if (!parent.isSameNode(scrollDocument())) {
+    if (!parent.isSameNode(scrollDocument()) && !hasPosition(element, 'absolute')) {
       top += scrollDocument().scrollTop;
     }
   }
